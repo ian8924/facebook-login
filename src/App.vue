@@ -16,6 +16,8 @@
 </template>
 
 <script>
+/* eslint-disable */
+
 import Hello from './components/Hello'
 
 export default {
@@ -39,7 +41,7 @@ export default {
     login () {
       let vm = this
       FB.login(function (response) {
-        vm.statusChangeCallback(response) 
+        vm.statusChangeCallback(response)
       }, {
         scope: 'email, public_profile',
         return_scopes: true
@@ -68,14 +70,14 @@ export default {
   },
   mounted () {
     let vm = this
-    
+
     // facebook 初始化
     window.fbAsyncInit = function() {
       FB.init({
         appId: '1346557768848626',
         cookie: true,
         xfbml: true,
-        version: 'v4.0'
+        version: 'v7.0'
       });
       FB.AppEvents.logPageView();
 

@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <img v-show="profile.name" 
+    <img v-show="profile.name"
         :src="profilePicture" alt="profile" class="profile-picture"/>
     <h1 v-html="msg"></h1>
   </div>
